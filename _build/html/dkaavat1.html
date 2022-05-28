@@ -104,7 +104,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Elinkaarilaskenta
+  Elinkaarilaskentaa
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -121,6 +121,33 @@
  <li class="toctree-l1">
   <a class="reference internal" href="elinkaarimenetelmat.html">
    Elinkaarilaskennan menetelmiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tilasto-oppia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1a.html">
+   Tilastolliset tunnusluvut
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1b.html">
+   Todennäköisyysjakaumat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2a.html">
+   Tilastollinen virheenarviointi
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2b.html">
+   Regressioanalyysi
   </a>
  </li>
 </ul>
@@ -418,9 +445,9 @@
 </div>
 <p>Kaavojen perusteluja:</p>
 <ol class="simple">
-<li><p>Vakiofunktion f(x) = c kuvaaja on vaakasuora, jonka tangentin kulmakerroin (derivaatta) = 0</p></li>
+<li><p>Vakiofunktion f(x) = c kuvaaja on vaakasuora viiva, jonka kulmakerroin = 0</p></li>
 <li><p>Jaollisuusopin kaavan mukaan derivaatan määritelmän mukainen erotusosamäärä sievenee muotoon<br />
-<span class="math notranslate nohighlight">\(f'(x_0)=\underset{x\to x_0}{lim}\frac{x^n-x_0^n}{x-x_0}= \underset{x\to x_0}{lim}(x^{n-1}+x^{n-2}x_0+x^{n-3}x_0^2+...+x_0^{n-1})\)</span> , joka lähestyy lauseketta <span class="math notranslate nohighlight">\(nx_0^{n-1}\)</span>, kun <span class="math notranslate nohighlight">\(x\to x_0\)</span></p></li>
+<span class="math notranslate nohighlight">\(f'(x_0)=\underset{x\to x_0}{lim}\frac{x^n-x_0^n}{x-x_0}= \underset{x\to x_0}{lim}(x^{n-1}+x^{n-2}x_0+x^{n-3}x_0^2+...+x_0^{n-1})= x_0^{n-1}+x_0^{n-1}x_0+... + x_0^{n-1} = nx_0^{n-1}\)</span></p></li>
 <li><p>Suoran f(x) = x  kulmakerroin eli derivaatta on 1. Kaavan voi myös johtaa sijoittamalla n=1 kaavaan (2), jolloin saadaan <span class="math notranslate nohighlight">\(Dx^1 = 1\cdot x^0 = 1\)</span></p></li>
 <li><p>Kaavaa (2) voidaan soveltaa myös, kun potenssi n on negatiivinen.  Tällöin <span class="math notranslate nohighlight">\(D\frac {1}{x^n} = Dx^{-n}=-n x^{-n-1} = -\frac {n}{x^{n+1}}\)</span></p></li>
 </ol>
@@ -453,8 +480,10 @@ c) <span class="math notranslate nohighlight">\(f'(-1) = 5*(-1)^4 = 5\)</span></
 <p>Polynomien derivointiin tarvitaan potenssifunktion derivoimissäännön lisäksi kaksi muuta sääntöä, joiden mukaan derivointi on lineaarinen operaatio: ts. vakion voi siirtää derivaattaoperaattorin eteen ja summafunktion derivaatta on sen termien derivaattojen summa.</p>
 <div class="tip admonition">
 <p class="admonition-title"><strong>Derivointioperaation lineaarisuussäännöt</strong></p>
-<p>i)   <span class="math notranslate nohighlight">\(D(a f(x)) = a Df(x)\)</span></p>
-<p>ii)  <span class="math notranslate nohighlight">\(D(f(x)+g(x)) = Df(x) + Dg(x)\)</span></p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(D(a f(x)) = a Df(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(D(f(x)+g(x)) = Df(x) + Dg(x)\)</span></p></li>
+</ol>
 </div>
 <div class="dropdown admonition">
 <p class="admonition-title">Derivoi <span class="math notranslate nohighlight">\(-3x^3 + 5x^2 - 4x + 7\)</span></p>
@@ -499,8 +528,9 @@ Periaate on sama kun tulossa on enemmän kuin kaksi funktiota.</p>
 </div>
 <div class="dropdown admonition">
 <p class="admonition-title">Derivoi <span class="math notranslate nohighlight">\(x^2\cdot sin(x)\)</span></p>
-<p>Kaavan merkinnöillä <span class="math notranslate nohighlight">\(f(x)=x^2\)</span> ja <span class="math notranslate nohighlight">\(g(x)=sin(x)\)</span> ja niiden derivaatat <span class="math notranslate nohighlight">\(f'(x) = 2x\)</span> ja <span class="math notranslate nohighlight">\(g'(x) = cos(x)\)</span></p>
-<p>Kun nämä sijoitetaan kaavaan <span class="math notranslate nohighlight">\(D\hspace{2mm}(f(x)\cdot g(x)) = f'(x)\cdot g(x) + f(x)\cdot g'(x)\)</span>, saadaan</p>
+<p>Kaavan merkinnöillä <span class="math notranslate nohighlight">\(f(x)=x^2\)</span> ja <span class="math notranslate nohighlight">\(g(x)=sin(x)\)</span><br />
+ja niiden derivaatat <span class="math notranslate nohighlight">\(f'(x) = 2x\)</span> ja <span class="math notranslate nohighlight">\(g'(x) = cos(x)\)</span></p>
+<p>Sijoitus kaavaan <span class="math notranslate nohighlight">\(D\hspace{2mm}(f(x)\cdot g(x)) = f'(x)\cdot g(x) + f(x)\cdot g'(x)\)</span> antaa</p>
 <p>D <span class="math notranslate nohighlight">\((x^2sin(x)) = 2x\cdot sin(x)+ x^2\cdot cos(x)\)</span></p>
 </div>
 <div class="dropdown admonition">
@@ -540,14 +570,17 @@ Funktiota y = cos(x) kutsutaan <strong>ulkofunktioksi</strong> ja funktiota y = 
 </div>
 <div class="dropdown admonition">
 <p class="admonition-title">Derivoi a) <span class="math notranslate nohighlight">\(cos(4x+1)\)</span>  b) <span class="math notranslate nohighlight">\(e^{-2x^2}\)</span>  c) <span class="math notranslate nohighlight">\((3x+1)^4\)</span></p>
-<p>a) Ulkofunktio g(x)= cos(x) ja sisäfunktio f(x) = 4x+1. Derivaatat g’(x)=-sin(x) ja f’(x) = 4 =&gt;<br />
+<p>a) Ulkofunktio g(x)= cos(x) ja sisäfunktio f(x) = 4x+1.<br />
+Derivaatat g’(x)=-sin(x) ja f’(x) = 4 =&gt;<br />
 D <span class="math notranslate nohighlight">\(cos(4x+1) = g'(f(x))\cdot f'(x) = -sin(4x+1)\cdot 4 = -4 sin(4x+1)\)</span></p>
-<p>b) Ulkofunktio <span class="math notranslate nohighlight">\(g(x)= e^x\)</span> ja sisäfunktio <span class="math notranslate nohighlight">\(f(x) = -2x^2\)</span>. Derivaatat <span class="math notranslate nohighlight">\(g'(x)=e^x\)</span> ja <span class="math notranslate nohighlight">\(f'(x) = -4x\)</span> =&gt;<br />
+<p>b) Ulkofunktio <span class="math notranslate nohighlight">\(g(x)= e^x\)</span> ja sisäfunktio <span class="math notranslate nohighlight">\(f(x) = -2x^2\)</span>.<br />
+Derivaatat <span class="math notranslate nohighlight">\(g'(x)=e^x\)</span> ja <span class="math notranslate nohighlight">\(f'(x) = -4x\)</span> =&gt;<br />
 D <span class="math notranslate nohighlight">\(e^{-2x^2} = g'(f(x))\cdot f'(x) = e^{-2x^2}\cdot (-4x) = -4x e^{-2x^2}\)</span></p>
-<p>c) Ulkofunktio <span class="math notranslate nohighlight">\(g(x)= x^4\)</span> ja sisäfunktio f(x) = 3x+1. Derivaatat <span class="math notranslate nohighlight">\(g'(x)=4 x^3\)</span> ja f’(x) = 3 =&gt;<br />
+<p>c) Ulkofunktio <span class="math notranslate nohighlight">\(g(x)= x^4\)</span> ja sisäfunktio f(x) = 3x+1.<br />
+Derivaatat <span class="math notranslate nohighlight">\(g'(x)=4 x^3\)</span> ja f’(x) = 3 =&gt;<br />
 D <span class="math notranslate nohighlight">\((3x+1)^4 = g'(f(x))\cdot f'(x) = 4(3x+1)^3\cdot 3 = 12 (3x+1)^3\)</span></p>
 </div>
-<p>Yhdistetyn funktion derivoimiskaavan käyttöä helpottaa, kun kaava puretaan useaksi kaavaksi tavallisimmille ulkofunktoille.</p>
+<p>Yhdistetyn funktion derivoimiskaavan käyttöä helpottaa, kun kaava puretaan useaksi kaavaksi tavallisille ulkofunktoille.</p>
 <div class="tip admonition">
 <p class="admonition-title"><strong>Yhdistetyn funktion derivointikaavoja eri ulkofunktioille</strong></p>
 <ol class="simple">

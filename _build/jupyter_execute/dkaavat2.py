@@ -13,7 +13,8 @@
 # :class: tip
 # Olkoon f(x,y) kahden muuttujan funktio, jolla on osittaisderivaatat molempien muuttujien suhteen.     
 # 
-# Osittaisderivaattaa muuttujien x ja y suhteen merkitään $ \frac{\partial f}{\partial x}$ ja $ \frac{\partial f}{\partial y}$.  <span style="color: brown;">     *(luetaan: "doo ef doo x")*</span>     
+# Osittaisderivaattaa muuttujien x ja y suhteen merkitään $ \frac{\partial f}{\partial x}$ ja $ \frac{\partial f}{\partial y}$.      
+# <span style="color: brown;">     *(luetaan: "doo ef doo x")*</span>     
 # 
 # Myös $f_x$ ja $D(f,x)$, sekä $f_y$ ja $D(f,y)$  ovat mahdollisia merkintätapoja.   
 # 
@@ -62,7 +63,7 @@
 # :class: tip
 # Funktion f(x,y) **gradientti** on sen osittaisderivaattojen muodostama vektori $(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y})$. Gradienttia merkitään usein $\nabla f$.       
 # 
-# Kahden muuttujan funktion z = f(x,y) kuvaaja 3D avaruudessa on pinta. Pisteessä (x,y) laskettu funktion f gradienttivektori kertoo, mihin suuntaan funktio kasvaa nopeimmin pinnan pisteessä (x,y, f(x,y)).      
+# Kahden muuttujan funktion z = f(x,y) kuvaaja 3D avaruudessa on pinta. Pisteessä (x,y) laskettu funktion f gradienttivektori kertoo, mihin suuntaan funktio kasvaa nopeimmin pinnan pisteessä (x,y,z), missä z=f(x,y)).      
 # 
 # Esim. Funktion $z = f(x,y) =  4 - x^2- y^2$ kuvaaja on alaspäin aukeava paraboloidi.    
 # Sen gradienttivektorin yleinen lauseke on $(\frac{\partial f}{\partial x},\frac{\partial f}{\partial y})$ = $(-2x,-2y)$. 
@@ -110,7 +111,7 @@
 
 # ```{admonition} Millä x:n arvolla lauseke $2.5 + 6.0x -1.5x^2$ saa suurimman arvonsa.
 # :class: dropdown
-# Funktion kuvaaja on alaspäin aukeava paraabeli.  Maksimi löytyy kohdasta, jossa derivaatta = 0      
+# Funktion kuvaaja on alaspäin aukeava paraabeli, jonka maksimikohdassa derivaatta = 0      
 # 
 # Lasketaan derivaatan nollakohta: D$(2.5 + 6.0 x - 1.5 x^2) = 6.0 - 3.0 x = 0$     
 # => $x = 6.0/3.0 = 2.0$      
@@ -140,7 +141,8 @@
 # 
 # Lasketaan funktion 2. derivaatta  $f''(x) = e^x$ ääriarvon laadun määrittämiseksi.    
 # Sen arvo derivaatan nollakohdassa on $f''(0) = e^0 = 1$,  joka on positiivinen.     
-# Funktiolla f(x) on siten minimi kohdassa x=0. Minimiarvo on $f(0) = e^0 - 0 + 1 = 1+1 = 2$ 
+# Funktiolla f(x) on siten minimi kohdassa x=0.      
+# Minimiarvo on $f(0) = e^0 - 0 + 1 = 1+1 = 2$ 
 # ```
 
 # Huom! Nykyisin ääriarvon laadun määrittämiseen riittää useini funktion kuvaajan piirtäminen grafiikkalaskimella.   Ääriarvotehtäviä käsitellään myöhemmin laajemmin. 

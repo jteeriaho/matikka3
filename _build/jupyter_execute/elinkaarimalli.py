@@ -25,7 +25,7 @@
 # vuokrilla, vastikkeilla ja muilla käyttökorvauksilla sekä rakennuksen tai sen osien myynnistä saata villa tuotoilla
 # (jäännösarvo)
 
-# **Rakennuksen elinkaarikustannuksia ovat mm. seuraavat:** (kuva 1): VRT. VTT:n TAULUKKO
+# **Rakennuksen elinkaarikustannuksia ovat mm. seuraavat:**
 # 
 # > Rakennuskustannukset      
 # > Ylläpitokustannukset (hoito ja kunnossapito)             

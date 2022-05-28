@@ -15,16 +15,15 @@
 
 # ```{admonition} **Klassinen todennäköisyys**
 # :class: tip
-# Merkinnät:     
+# Nimitykset:     
 # E = **tapahtuma-avaruus** eli *otosavaruus* , joka koostuu alkeistapauksista joiden tiedetään olevan yhtä todennäköisiä     
 # A = **tapahtuma**, joka on E:n osajoukko, jonka todennäköisyys halutaan laskea
 # 
-# Tapahtuman A todennäköisyys P(A) määritellään seuraavalla kaavalla:      
+# Tapahtuman A todennäköisyys P(A) määritellään seuraavasti:      
 # 
 # $P(A)=\frac {k}{n}$       
 # 
-# missä n = kaikkien mahdollisten alkeistapausten lukumäärä      
-#       k = tapahtuman A kannalta suotuisten alkeistapausten lukumäärä
+# missä n = kaikkien mahdollisten alkeistapausten lukumäärä ja k = tapahtuman A kannalta suotuisten alkeistapausten lukumäärä
 # 
 # ```
 
@@ -91,7 +90,8 @@
 # Odotusarvo $\mu=\sum p_ix_i=0.045\cdot 5+0.582\cdot 4+0.325\cdot 3+0.046\cdot 2+0.002\cdot 1=3.62$     
 # 
 # Keskihajonta $\sigma=\sum p_i(x_i-\mu)^2$       
-# $\hspace{26mm}=0.045\cdot (5-3.62)^2+0.582\cdot (4-3.62)^2+0.325\cdot (3-3.62)^2+0.046\cdot (2-3.62)^2+0.002\cdot (1-3.62)^2=0.43$
+# $\hspace{30mm}=0.045\cdot (5-3.62)^2+0.582\cdot (4-3.62)^2$      
+# $\hspace{30mm}+0.325\cdot (3-3.62)^2+0.046\cdot (2-3.62)^2+0.002\cdot (1-3.62)^2=0.43$
 
 # ## Jatkuvat todennäköisyysjakaumat 
 
@@ -116,10 +116,11 @@
 
 # ### Kertymäfunktio $\varphi(x)$
 
-# **Kertymäfunktion $\varphi(x)$** arvo pisteessä x antaa todennäköisyyden sille, että muuttujan arvo on pienempi kuin x.      
+# **Kertymäfunktion $\varphi(x)$** arvo pisteessä x antaa todennäköisyyden sille, että muuttujan arvo on pienempi kuin x.       
+# 
 # Kertymäfunktio laskee tiheysfunktion p(x) ja x- akselin välisen pinta-alan välillä $]-\infty ,x]$.       
 # 
-# Kertymäfunktion on englanniksi *cumulative density function* ja sen lyhenne useissa symbolisen laskennan ohjelmistoissa on cdf(x)
+# Kertymäfunktio on englanniksi *cumulative density function* ja sen lyhenne useissa symbolisen laskennan ohjelmistoissa on cdf(x)
 
 # ```{admonition} **Kertymäfunktion $\varphi(x)$ ominaisuuksia**
 # :class: tip
@@ -144,7 +145,9 @@
 # Tiheysfunktio $p(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^-{\frac{(x-\mu)^2}{2\sigma^{2}}}$ 
 # 
 # 
-# Kertymäfunktio $\varphi(x) = \frac{1}{2}[1+erf(\frac{x-\mu}{\sqrt{2}\sigma})]$ 
+# Kertymäfunktio $\varphi(x) = \frac{1}{2}[1+erf(\frac{x-\mu}{\sqrt{2}\sigma})]$       
+# 
+# *kaavan erf(x) on erikoisfunktio, jonka englanninkielinen nimitys on "error function"*
 # 
 # 
 # Tiheysfunktion kuvaajaa sanotaan Gaussin kellokäyräksi

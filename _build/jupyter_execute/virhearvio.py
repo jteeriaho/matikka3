@@ -12,13 +12,13 @@
 # :class: tip
 # absoluuttisena virheenä $\Delta{x}$     
 # 
-# > $x = (2.15 \pm 0.05)$ mm  
+# $\hspace{1cm}x = (2.15 \pm 0.05)$ mm  
 # 
 # suhteellisena virheenä $\frac {\Delta{x}}{x}\cdot 100\%$     
 # 
-# > $x = 2.15 mm \pm 2.4\%$
+# $\hspace{1cm}x = 2.15 mm \pm 2.4\%$
 # 
-# esim. virtamittarin tarkkuus on usein ilmaistu suhteellisena virheenä  
+# esim. virtamittarin tarkkuus on usein ilmaistu suhteellisen virheen avulla  
 # 
 # ```
 
@@ -38,7 +38,7 @@
 # 
 # ```
 
-# ````{admonition} Esim. Laske kuularingin ala virherajoineen, kun sen halkaisija d =$(213\pm 1)$ cm.
+# ````{admonition} Esim. Laske kuularingin ala virherajoineen, kun halkaisija d =$(213\pm 1)$ cm.
 # :class: dropdown
 # Vastaus: $(3.56\pm 0.04) m^2$ 
 # ```{admonition} Ratkaisu

@@ -10,13 +10,13 @@
 # 1. Seuraavaksi muodostetaan funktion **tangentin yhtälö** pisteeseen $(x_0, f(x_0)$ käyttäen kulmakertoimena derivattaa $f'(x_0)$.       
 # 
 # 
-# 2. Tangentin yhtälö on:    $y - f(x_0) = f'(x_0)\cdot (x-x_0)$   
+# > Tangentin yhtälö on:    $y - f(x_0) = f'(x_0)\cdot (x-x_0)$   
 # 
 # 
-# 3. Lasketaan tangentin ja x-akselin leikkauskohta $x_1$ sijoittamalla em. yhtälöön y = 0, jolloin saadaan  $x_1=x_0-\frac{f(x_0)}{f'(x_0)}$ 
+# 3. Lasketaan tangentin ja x-akselin leikkauskohta $x_1$ sijoittamalla yhtälöön y = 0, jolloin saadaan  $x_1=x_0-\frac{f(x_0)}{f'(x_0)}$ 
 # 
 #             
-# 4. Tämän jälkeen asetetaan $x_1$ uudeksi alkuarvaukseksi ja jatketaan samaan tapaan, kunnes lukujonon $x_0, x_1, x_2, ...$ arvot näyttävät vakiintuvan. Lukujonon raja-arvo on yhtälön f(x) = 0 juuren likiarvo.
+# 4. Tämän jälkeen asetetaan $x_1$ uudeksi alkuarvaukseksi ja jatketaan samaan tapaan, kunnes lukujonon $x_0, x_1, x_2, ...$ arvot vakiintuvat tiettyyn arvoon. Lukujonon raja-arvo on yhtälön f(x) = 0 juuren likiarvo.
 
 # Kuva näyttää, miten käyrän tangentti johtaa iteraatioaskeleessa lähemmäs juurta.
 # ![iter](images/kuva26.PNG)

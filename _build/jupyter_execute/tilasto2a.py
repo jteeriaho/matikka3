@@ -104,7 +104,7 @@
 # **= LUOTTAMUSVÄLI.T(5%;101;10)**, joka antaa virheeksi **72.2**      
 # 
 # (Ilman Exceliä tulos saataisiin kaavalla $\Delta X = t \frac{s}{\sqrt{n}} = 2.262\frac{101}{\sqrt{10}}= 72.2$.      
-# Kattavuuskerroin 2.262 löytyy ylempänä esitetysta taulukosta riviltä n - 1 = 10 - 1 = 9) 
+# Kattavuuskerroin 2.262 löytyy yo. taulukosta riviltä n - 1 = 10 - 1 = 9) 
 # 
 # ```
 
@@ -156,7 +156,7 @@
 
 # ```{admonition} Tavaratalon asiakkaiden keski-ikää selvitettiin kysymällä ikä 200 satunnaisesti valitulta asiakkaalta.  Otoskeskiarvo oli 41.3 v  ja keskihajonta 23.5 v. Ilmoita tutkimuksen perusteella asiakkaiden keski-ikä ja sen virhemarginaali (95% luottamustasolla) 
 # :class: dropdown
-# Keski-ikä on 41.3 vuotta       
+# Keski-iäksi annetaan otoskeskiarvo 41.3       
 # 
 # Virhemarginaali saadaan Excel-kaavalla      
 # **=LUOTTAMUSVÄLI.T(5% ; 23,5 ; 200)** antaa tuloksen 3.3      

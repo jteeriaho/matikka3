@@ -440,7 +440,7 @@
 <section id="tilastolliset-muuttujat">
 <h2>Tilastolliset muuttujat<a class="headerlink" href="#tilastolliset-muuttujat" title="Permalink to this headline">¶</a></h2>
 <p>Tilastotutkimoksen kohderyhmää kutsutaan tilasto-opissa <strong>populaatioksi</strong></p>
-<p>Jos populaatio on suuri, siitä usein otetaan esim. satunnaisvalinnalla <strong>otos</strong>, johon tutkimus kohdistetaan.</p>
+<p>Suuresta populaatiosta otetaan usen satunnaisvalinnalla <strong>otos</strong>, johon tutkimus kohdistetaan.</p>
 <p>Tilastotutkimuksissa mitattavia ominaisuuksia ja suureita sanotaan <strong>tilastomuuttujiksi</strong>.</p>
 <p>Muuttujat voivat olla <strong>numeerisia</strong> tai <strong>luokkamuuttujia</strong></p>
 <blockquote>
@@ -451,7 +451,7 @@
 <h3>Diskreetin muuttujan arvojen jakauman esittäminen<a class="headerlink" href="#diskreetin-muuttujan-arvojen-jakauman-esittaminen" title="Permalink to this headline">¶</a></h3>
 <p>Tavanomaisia diskreetin jakauman esitystapoja ovat <strong>frekvenssitaulu</strong> ja <strong>pylväskaavio</strong></p>
 <div class="dropdown admonition">
-<p class="admonition-title">Esim. Kokeeseen, jonka maksimipistemäärä oli 20, osallistui 28 opiskelijaa. Kokeen arvosanat olivat 19,11,16,12,7,11,10,15,7,11,17,9,7,14,14,13,8,16,12,19,8,12,14,5,16,18,13,11. Laadi arvosanajakaumasta frekvenssitaulu ja pylväskaavio.      </p>
+<p class="admonition-title">Esim. Kokeeseen, jonka maksimipistemäärä oli 20, osallistui 28 opiskelijaa. Kokeen arvosanat olivat 19,11,16,12,7,11,10,15,7,11,17,9,7,14,14,13,8,16,12,19,8,12,14,5,16,18,13 ja 11. Laadi arvosanajakaumasta frekvenssitaulu ja pylväskaavio.      </p>
 <p><strong>Frekvenssitaulu</strong></p>
 <table class="colwidths-auto table">
 <thead>
@@ -517,8 +517,8 @@
 <p><em>Mediaani</em> on lukujoukon keskimmäinen luku: puolet joukon luvuista on pienempiä ja puolet suurempia kuin mediaani</p>
 <p><em>Tyyppiarvo</em> eli <em>moodi</em> on muuttujan arvo, jonka frekvenssi on suurin</p>
 <p><em>Prosenttipiste</em>, jonka parametrina on prosenttiluku p ilmoittaa muuttujan arvon, jonka alapuolelle jää p prosenttia arvoista</p>
-<p><em>Ylä- ja alaneljännes</em> ovat prosenttipisteen erikoistapauksia vastaten prosenttiarvoja p = 75 ja p = 25. Itse asiassa mediaanikin on prosenttipiste, jossa p = 50.</p>
-<p><em>P90-arvo</em> on mm. rakennusten sisäilmamittauksissa käytetty viitearvo, joka tarkoittaa prosenttipistettä, kun p=90.</p>
+<p><em>Ylä- ja alaneljännes</em> ovat prosenttipisteen erikoistapauksia vastaten prosenttiarvoja 75 ja 25.</p>
+<p><em>P90-arvo</em> on mm. rakennusten sisäilmamittauksissa käytetty viitearvo, joka tarkoittaa prosenttipistettä, kun p = 90.</p>
 </section>
 <section id="tilastolliset-tunnusluvut-excelissa">
 <h3>Tilastolliset tunnusluvut Excelissä<a class="headerlink" href="#tilastolliset-tunnusluvut-excelissa" title="Permalink to this headline">¶</a></h3>
@@ -609,19 +609,23 @@ P90 prosenttipiste 1061</p>
 <p class="admonition-title"><strong>Keskiarvon ja keskihajonnan laskeminen luokitellusta aineistosta</strong></p>
 <p>keskiarvo:      <span class="math notranslate nohighlight">\(\hspace{1cm}\mu=\frac{\sum f_ix_i}{n}\)</span></p>
 <p>keskihajonta:   <span class="math notranslate nohighlight">\(\hspace{5mm}\sigma=\sqrt{\frac{\sum f_i(x_i-\mu)^2}{n}}\)</span></p>
-<p><span class="math notranslate nohighlight">\(x_i\)</span>  ja <span class="math notranslate nohighlight">\(f_i\)</span> on luokan i luokkakeskus ja frekvenssi, n = arvojen kokonaismäärä</p>
+<p>missä <span class="math notranslate nohighlight">\(x_i\)</span>  ja <span class="math notranslate nohighlight">\(f_i\)</span> on luokan i luokkakeskus ja frekvenssi, n = arvojen kokonaismäärä</p>
 </div>
 <div class="dropdown admonition">
 <p class="admonition-title">Määritä esimerkin reaktioaikojen keskiarvo luokitellusta aineistosta</p>
 <p>keskiarvo:  <span class="math notranslate nohighlight">\(\mu=\frac{5\cdot 650+7\cdot 750+4\cdot 850+6\cdot 950+8\cdot 1050}{30}=870\)</span></p>
 <p>keskihajonta: <span class="math notranslate nohighlight">\(\sigma=\sqrt{\frac{5\cdot (650-870)^2 + 7\cdot (750-870)^2+...+ 8\cdot (1050-870)^2}{30}} = 146\)</span></p>
-<p>Vrt. alkuperäisestä datasta lasketut tarkat arvot 861.2 ja 153.0. Ero on pieni.</p>
+<p>Ero alkuperäisestä datasta laskettuihin tarkkoihin arvoihin 861.2 ja 153.0 on pieni.</p>
 </div>
 </section>
 <section id="otantakeskihajonta-ja-populaatiokeskihajonta">
 <h3>Otantakeskihajonta ja populaatiokeskihajonta<a class="headerlink" href="#otantakeskihajonta-ja-populaatiokeskihajonta" title="Permalink to this headline">¶</a></h3>
-<p>Kokonaistutkimuksessa mitataan muuttujan arvo koko populaatiosta. <strong>Otantatutkimuksessa</strong> valitaan jotain otantamenetelmää käyttäen populaatiosta osajoukko, jota sanotaan <strong>otokseksi</strong> <em>(sample)</em>. Otoksesta lasketut tunnusluvut poikkeavat sitä enemmän populaation tunnusluvuista, mitä pienempi on <strong>otoskoko</strong> <em>(sample size)</em></p>
-<p>Keskihajonta lasketaan hieman eri tavalla riippuen siitä, onko kyseessä kokonaistutkimus vai otantatutkimus. Suurilla otoskoon arvoilla kaavat antavat likimain saman tuloksen.</p>
+<p><strong>Kokonaistutkimuksessa</strong> mitataan muuttujan arvo koko populaatiosta.<br />
+<strong>Otantatutkimuksessa</strong> valitaan jotain otantamenetelmää käyttäen populaatiosta osajoukko, jota sanotaan <strong>otokseksi</strong> <em>(sample)</em>.</p>
+<p>Otoksesta lasketut tunnusluvut poikkeavat sitä enemmän populaation tunnusluvuista, mitä pienempi on <strong>otoskoko</strong> <em>(sample size)</em></p>
+<p>Keskihajonta lasketaan hieman eri kaavalla riippuen siitä, onko kyseessä kokonaistutkimus vai otantatutkimus.<br />
+Niistä käytetään termejä <em>populaatiokeskihajonta</em> ja <em>otoskeskihajonta</em>.</p>
+<p>Suurilla otoskoon arvoilla kaavojen antamien arvojen ero on erittäin pieni.</p>
 <div class="tip admonition">
 <p class="admonition-title"><strong>Otoskeskihajonta ja populaatiokeskihajonta</strong></p>
 <p>populaatiokeskihajonta:   <span class="math notranslate nohighlight">\(\sigma=\sqrt{\frac{\sum (x_i-\mu)^2}{n}}\)</span></p>

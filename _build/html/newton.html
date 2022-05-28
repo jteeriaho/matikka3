@@ -104,7 +104,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Elinkaarilaskenta
+  Elinkaarilaskentaa
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -121,6 +121,33 @@
  <li class="toctree-l1">
   <a class="reference internal" href="elinkaarimenetelmat.html">
    Elinkaarilaskennan menetelmiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tilasto-oppia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1a.html">
+   Tilastolliset tunnusluvut
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1b.html">
+   Todennäköisyysjakaumat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2a.html">
+   Tilastollinen virheenarviointi
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2b.html">
+   Regressioanalyysi
   </a>
  </li>
 </ul>
@@ -320,9 +347,13 @@
 <p>Nollakohdan etsiminen aloitetaan asettamalla nollakohdalle <strong>alkuarvaus <span class="math notranslate nohighlight">\(x_0\)</span></strong> iteraation lähtökohdaksi.</p>
 <ol class="simple">
 <li><p>Seuraavaksi muodostetaan funktion <strong>tangentin yhtälö</strong> pisteeseen <span class="math notranslate nohighlight">\((x_0, f(x_0)\)</span> käyttäen kulmakertoimena derivattaa <span class="math notranslate nohighlight">\(f'(x_0)\)</span>.</p></li>
-<li><p>Tangentin yhtälö on:    <span class="math notranslate nohighlight">\(y - f(x_0) = f'(x_0)\cdot (x-x_0)\)</span></p></li>
-<li><p>Lasketaan tangentin ja x-akselin leikkauskohta <span class="math notranslate nohighlight">\(x_1\)</span> sijoittamalla em. yhtälöön y = 0, jolloin saadaan  <span class="math notranslate nohighlight">\(x_1=x_0-\frac{f(x_0)}{f'(x_0)}\)</span></p></li>
-<li><p>Tämän jälkeen asetetaan <span class="math notranslate nohighlight">\(x_1\)</span> uudeksi alkuarvaukseksi ja jatketaan samaan tapaan, kunnes lukujonon <span class="math notranslate nohighlight">\(x_0, x_1, x_2, ...\)</span> arvot näyttävät vakiintuvan. Lukujonon raja-arvo on yhtälön f(x) = 0 juuren likiarvo.</p></li>
+</ol>
+<blockquote>
+<div><p>Tangentin yhtälö on:    <span class="math notranslate nohighlight">\(y - f(x_0) = f'(x_0)\cdot (x-x_0)\)</span></p>
+</div></blockquote>
+<ol class="simple">
+<li><p>Lasketaan tangentin ja x-akselin leikkauskohta <span class="math notranslate nohighlight">\(x_1\)</span> sijoittamalla yhtälöön y = 0, jolloin saadaan  <span class="math notranslate nohighlight">\(x_1=x_0-\frac{f(x_0)}{f'(x_0)}\)</span></p></li>
+<li><p>Tämän jälkeen asetetaan <span class="math notranslate nohighlight">\(x_1\)</span> uudeksi alkuarvaukseksi ja jatketaan samaan tapaan, kunnes lukujonon <span class="math notranslate nohighlight">\(x_0, x_1, x_2, ...\)</span> arvot vakiintuvat tiettyyn arvoon. Lukujonon raja-arvo on yhtälön f(x) = 0 juuren likiarvo.</p></li>
 </ol>
 <p>Kuva näyttää, miten käyrän tangentti johtaa iteraatioaskeleessa lähemmäs juurta.
 <img alt="iter" src="_images/kuva26.PNG" /></p>

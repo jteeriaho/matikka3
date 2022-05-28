@@ -4,7 +4,8 @@
 # # Regressioanalyysi   
 
 #        
-# Regressioanalyysissä tutkitaan yhden tai useamman selittävän muuttujan vaikutusta selitettävään muuttujaan.  
+# Regressioanalyysissä tutkitaan yhden tai useamman selittävän muuttujan vaikutusta selitettävään muuttujaan.     
+# 
 # Analyysin tuloksena saadaan matemaattinen malli $y = f(x_1,..., x_n)$, missä y on ns. **selitettävä muuttuja** *(dependent variable)* ja $x_1,....,x_n$  ovat ns. **selittäviä muuttujia** *(independent variables)*.   
 # 
 # Yleisimmässä, ns. **lineaarisessa regressiomallissa**  pyritään löytämään lineaarinen funktio   
@@ -30,13 +31,14 @@
 # Tapa1: (harvinainen, yleensä regressioanalyysi tehdään tilasto-ohjelmistolla tai Excelillä)      
 # 
 # Muodostetaan ns. residuaalivektori **e** mallin antamien ja havaittujen y-arvojen erotuksista.     
-# **e** $ = (a*1+b-42.5, a*1.5+b-42.8, a*2+b-43.2,a*2.5+b-43.5, a*3+b-43.9,a*3.5+b-44.2)$    
+# $e = (a\cdot 1+b-42.5, a\cdot1.5+b-42.8, a\cdot2+b-43.2,a\cdot2.5+b-43.5, a\cdot3+b-43.9,a\cdot3.5+b-44.2)$    
 # 
 # Residuaalivektorin komponentit näkyvä ao. kuvassa pystyviivoina       
 # ![res](images/kuva60.PNG)        
 # 
 # Minimoidaan residuaalien neliösumma käyttäen WolframAlphan minimize komentoa.       
-# $\text{minimize } (a\cdot 1.0+ b-42.5)^2 + (a\cdot 1.5+ b-42.8)^2+ (a\cdot 2+ b-43.2)^2+ (a\cdot 2.5+ b-43.8)^2+ (a\cdot 3+ b-43.9)^2+ (a\cdot 3.5+ b-44.2)^2$
+# $\text{minimize } (a\cdot 1.0+ b-42.5)^2 + (a\cdot 1.5+ b-42.8)^2+ (a\cdot 2+ b-43.2)^2$     
+# $+ (a\cdot 2.5+ b-43.8)^2+ (a\cdot 3+ b-43.9)^2+ (a\cdot 3.5+ b-44.2)^2$
 # 
 # Tulos:  kulmakerroin a = 0.6914 ja vakio b = 41.7943    
 # ![res2](images/kuva61.PNG)
@@ -56,11 +58,11 @@
 
 # ### Monen muuttujan lineaarinen regressio  ( väh. 2 selittävää muuttujaa)
 
-# Jos esimerkiksi data koostuu pistekolmikoista $(x_1,x_2,y)$, missä y on selitettävä muuttuja ja $x_1$ ja $x_2$ selittäviä muuttujia, niin lineaarinen malli on muotoa $y = a_1 x_1 + a_2 x_2 + b$.  Geometrisesti malli edustaa tasoa 3D avaruudessa.     
+# Jos data koostuu pistekolmikoista $(x_1,x_2,y)$, missä y on selitettävä muuttuja ja $x_1$ ja $x_2$ selittäviä muuttujia, niin lineaarinen malli on muotoa $y = a_1 x_1 + a_2 x_2 + b$.  Geometrisesti malli edustaa tasoa 3D avaruudessa.     
 # 
 # Mallin parametreina on kaksi kulmakerrointa $a_1$ ja $a_2$ sekä vakiotermi b.   
 # 
-# Parametrien arvot määräytyvät siten, että residuaalien $e_i = y_i – (ax_{1i} + bx_{2i} + c)$   neliösummalle etsitään minimikohta.    
+# Parametrien arvot määräytyvät siten, että residuaalien $e_i = y_i – (ax_{1i} + bx_{2i} + c)$   neliösummalla on minimikohta.    
 # 
 # ![3d](images/kuva64.PNG)
 
@@ -86,7 +88,7 @@
 # 3. Valitse haluamasi malli kuvagalleriasta            
 # 4. Rastita kohta Näytä kaava kaaviossa    
 # 
-# Alla pari kuvaa tuloksista     
+# Kuvissa eksponenttimallin ja 2. asteen polynomimallin sovitus datapisteisiin.     
 # ![malleja](images/kuva67.PNG)      
 # 
 #   

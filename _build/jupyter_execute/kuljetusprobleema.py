@@ -14,7 +14,7 @@
 # Lineaarisen ausekkeen a x + b y , missä vakiot , suurimman tai pienimmän arvon määrittämistä tasoalueessa nimitetään lineaariseksi optimoinniksi. Lauseke voi esittää esim. kahden eri tuotteen myyntivoittoa. 
 # Näiden tuotteiden valmistusta rajoittavat ehdot, jotka aiheituvat rajallisista työaika-, valmistusmateriaali- ja tuotantokustannusresursseista, voidaan usein havainnollistaa tasoalueena.
 
-# ```{admonition} Esim. Epäyhtälöt $x + 3 y ≤ 18,  3 x + 2 y ≤ 19, x ≥  0\text{ ja }y ≥  0$ määrittävät nelikulmion N  x,y – tasossa. Määritä lausekkeen $f =  5x +4 y$ suurin arvo nelikulmiossa N   
+# ```{admonition} Esim. Epäyhtälöt $x + 3 y ≤ 18,  3 x + 2 y ≤ 19, x ≥  0\text{ ja }y ≥  0$ määrittävät nelikulmion   x,y – tasossa. Määritä lausekkeen $f =  5x +4 y$ suurin arvo nelikulmiossa    
 # :class: tip     
 # WolframAlphalla kuva rajoitteiden määräämästä nelikulmiosta syntyy kätevästi komennolla:       
 # $\color{red}{\text{plot }\{x + 3 y ≤ 18,  3 x + 2 y ≤ 19, x ≥  0, y ≥  0\}}$ 
@@ -25,10 +25,10 @@
 # 
 # Lineaarisen funktion f kuvaaja on tasopinta 3D - avaruudessa. Gradientti kertoo, mihin suuntaan x,y - tasossa funktio f = 5x+4y kasvaa jyrkimmin.   
 # 
-# Kuvaan on piirretty gradientin suuntaisia vektoreita. Kuvan perusteella on ilmeistä, että funktio f saavuttaa suurimman arvonsa pisteessä P, joka on gradientin suunnassa kauimmainen nelikulmion N piste.      
+# Kuvaan on piirretty gradientin suuntaisia vektoreita. Kuvan perusteella on ilmeistä, että funktio f saavuttaa suurimman arvonsa pisteessä P, joka on gradientin suunnassa kauimmainen nelikulmion piste.      
 # 
 #     
-# Piste P on kahden nelikulmion N rajaviivan x + 3 y = 18 ja 3 x + 2 y = 19 risteyskohdassa. Ratkaisemalla yhtälöpari esim. laskinkomennolla $\color{red}{\text{solve }x + 3 y = 18,  3 x + 2 y = 19}$, saadaan P:n koordinaateiksi x = 3 ja  y = 5.      
+# Piste P on kahden nelikulmion  rajaviivan x + 3 y = 18 ja 3 x + 2 y = 19 risteyskohdassa. Ratkaisemalla yhtälöpari esim. laskinkomennolla $\color{red}{\text{solve }x + 3 y = 18,  3 x + 2 y = 19}$, saadaan P:n koordinaateiksi x = 3 ja  y = 5.      
 # 
 # Funktion f  suurin arvo on siten $f(3,5) = 5\cdot 3 + 4\cdot 5 = 35$  
 # 

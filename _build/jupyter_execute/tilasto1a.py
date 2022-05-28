@@ -7,7 +7,7 @@
 
 # Tilastotutkimoksen kohderyhmää kutsutaan tilasto-opissa **populaatioksi** 
 #  
-# Jos populaatio on suuri, siitä usein otetaan esim. satunnaisvalinnalla **otos**, johon tutkimus kohdistetaan.
+# Suuresta populaatiosta otetaan usen satunnaisvalinnalla **otos**, johon tutkimus kohdistetaan.
 # 
 # Tilastotutkimuksissa mitattavia ominaisuuksia ja suureita sanotaan **tilastomuuttujiksi**.   
 # 
@@ -21,7 +21,7 @@
 
 # Tavanomaisia diskreetin jakauman esitystapoja ovat **frekvenssitaulu** ja **pylväskaavio**
 
-# ```{admonition} Esim. Kokeeseen, jonka maksimipistemäärä oli 20, osallistui 28 opiskelijaa. Kokeen arvosanat olivat 19,11,16,12,7,11,10,15,7,11,17,9,7,14,14,13,8,16,12,19,8,12,14,5,16,18,13,11. Laadi arvosanajakaumasta frekvenssitaulu ja pylväskaavio.      
+# ```{admonition} Esim. Kokeeseen, jonka maksimipistemäärä oli 20, osallistui 28 opiskelijaa. Kokeen arvosanat olivat 19,11,16,12,7,11,10,15,7,11,17,9,7,14,14,13,8,16,12,19,8,12,14,5,16,18,13 ja 11. Laadi arvosanajakaumasta frekvenssitaulu ja pylväskaavio.      
 # :class: dropdown        
 # **Frekvenssitaulu**
 # 
@@ -65,9 +65,9 @@
 # 
 # *Prosenttipiste*, jonka parametrina on prosenttiluku p ilmoittaa muuttujan arvon, jonka alapuolelle jää p prosenttia arvoista
 # 
-# *Ylä- ja alaneljännes* ovat prosenttipisteen erikoistapauksia vastaten prosenttiarvoja p = 75 ja p = 25. Itse asiassa mediaanikin on prosenttipiste, jossa p = 50.
+# *Ylä- ja alaneljännes* ovat prosenttipisteen erikoistapauksia vastaten prosenttiarvoja 75 ja 25.      
 # 
-# *P90-arvo* on mm. rakennusten sisäilmamittauksissa käytetty viitearvo, joka tarkoittaa prosenttipistettä, kun p=90.
+# *P90-arvo* on mm. rakennusten sisäilmamittauksissa käytetty viitearvo, joka tarkoittaa prosenttipistettä, kun p = 90.
 
 # ### Tilastolliset tunnusluvut Excelissä
 
@@ -131,7 +131,7 @@
 # 
 # keskihajonta:   $\hspace{5mm}\sigma=\sqrt{\frac{\sum f_i(x_i-\mu)^2}{n}}$       
 # 
-# $x_i$  ja $f_i$ on luokan i luokkakeskus ja frekvenssi, n = arvojen kokonaismäärä
+# missä $x_i$  ja $f_i$ on luokan i luokkakeskus ja frekvenssi, n = arvojen kokonaismäärä
 # 
 # ```
 
@@ -141,14 +141,20 @@
 # 
 # keskihajonta: $\sigma=\sqrt{\frac{5\cdot (650-870)^2 + 7\cdot (750-870)^2+...+ 8\cdot (1050-870)^2}{30}} = 146$     
 # 
-# Vrt. alkuperäisestä datasta lasketut tarkat arvot 861.2 ja 153.0. Ero on pieni. 
+# Ero alkuperäisestä datasta laskettuihin tarkkoihin arvoihin 861.2 ja 153.0 on pieni. 
 # ```    
 
 # ### Otantakeskihajonta ja populaatiokeskihajonta
 
-# Kokonaistutkimuksessa mitataan muuttujan arvo koko populaatiosta. **Otantatutkimuksessa** valitaan jotain otantamenetelmää käyttäen populaatiosta osajoukko, jota sanotaan **otokseksi** *(sample)*. Otoksesta lasketut tunnusluvut poikkeavat sitä enemmän populaation tunnusluvuista, mitä pienempi on **otoskoko** *(sample size)*
+# **Kokonaistutkimuksessa** mitataan muuttujan arvo koko populaatiosta.     
+# **Otantatutkimuksessa** valitaan jotain otantamenetelmää käyttäen populaatiosta osajoukko, jota sanotaan **otokseksi** *(sample)*.       
 # 
-# Keskihajonta lasketaan hieman eri tavalla riippuen siitä, onko kyseessä kokonaistutkimus vai otantatutkimus. Suurilla otoskoon arvoilla kaavat antavat likimain saman tuloksen.
+# Otoksesta lasketut tunnusluvut poikkeavat sitä enemmän populaation tunnusluvuista, mitä pienempi on **otoskoko** *(sample size)*
+# 
+# Keskihajonta lasketaan hieman eri kaavalla riippuen siitä, onko kyseessä kokonaistutkimus vai otantatutkimus.    
+# Niistä käytetään termejä *populaatiokeskihajonta* ja *otoskeskihajonta*.        
+# 
+# Suurilla otoskoon arvoilla kaavojen antamien arvojen ero on erittäin pieni.
 
 # ```{admonition} **Otoskeskihajonta ja populaatiokeskihajonta**
 # :class: tip

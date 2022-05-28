@@ -16,9 +16,8 @@
 # > t = aika, korkojaksojen lukumäärä      
 # 
 # 
-# Edellä mainittujen lisäksi kaavoissa esiintyy usein symboli r (lisäyskerroin, korkotekijä), jonka laskukaava on     
-# 
-# r = 1 + i
+# Em. lisäksi kaavoissa käytetään usein symbolia r, jonka laskukaava on r = 1 + i.       
+# Sitä nimitetään *lisäyskertoimeksi* tai *korkotekijäksi*.
 
 # ### Tulevan arvon laskeminen koronkorkomenetelmällä
 
@@ -45,7 +44,7 @@
 
 # Kun halutaan tietää esim. jonkin tulevan tuoton arvo nykyhetkellä, tarvitaan **nykyarvon laskemista eli diskonttausta** 
 
-# ```{admonition} **Tulevan arvon laskukaava**
+# ```{admonition} **Nykyarvon laskukaava**
 # :class: tip
 #  
 # Nykyarvo $k = \frac{K}{(1+i)^t}\hspace{1cm}$ joka voidaan esittää myös muodossa       
@@ -76,7 +75,7 @@
 # ```
 
 # *Kaavan perustelu:*     
-# $K = k {(1+i)}^{t} \to \frac{K}{k} = (1+i)^t \to 1+i=\sqrt[t]{\frac{K}{k}}\to \text{tulos} $     
+# $K = k {(1+i)}^{t} \Rightarrow \frac{K}{k} = (1+i)^t \Rightarrow 1+i=\sqrt[t]{\frac{K}{k}}\Rightarrow i = \sqrt[t]{\frac{K}{k}}-1 $     
 
 # ```{admonition} Paavo sijoittaa 20000 € kohteeseen, josta arvioi saavansa 24000 € myydessään sen 5 v kuluttua. Paavo tavoittelee 4.0% prosentin voittoa investoinnille. Toteutuuko tavoite? Laske Paavon saama todellinen korko?
 # :class: dropdown
@@ -100,7 +99,7 @@
 # ```
 
 # *Kaavan perustelu:*     
-# $K = k {(1+i)}^{t} \to \frac{K}{k} = (1+i)^t \to log(\frac{K}{k})= log((1+i)^t)= t\hspace{1mm} log(1+i)\to t = \frac {ln(\frac{K}{k})}{ln(1+i)} $
+# $K = k {(1+i)}^{t} \Rightarrow \frac{K}{k} = (1+i)^t \Rightarrow log(\frac{K}{k})= log((1+i)^t)= t\hspace{1mm} log(1+i)\Rightarrow t = \frac {ln(\frac{K}{k})}{ln(1+i)} $
 
 # ```{admonition} Annen auton arvo on nyt 5000 €. Monenko vuoden kuluttua arvo on enää 1000 € olettaen, että ko. automallin arvo putoaa 15% vuodessa?
 # :class: dropdown
@@ -138,7 +137,8 @@
 # 
 # Yhtälö on liian pitkä laskimella ratkaistavaksi. Käytetään **tasaerän laskukaavaa**   
 # 
-# $p=\frac{k\hspace{1mm}i}{1-(1+i)^{-n}}$, missä k = lainattu summa, i = lyhennyskauden korko, n = lyhennysten lukumäärä (laina-aika)     
+# $p=\frac{k\hspace{1mm}i}{1-(1+i)^{-n}}$, missä k = lainattu summa, i = lyhennyskauden korko,     
+# n = lyhennysten lukumäärä     
 # 
 # Sijoitusten jälkeen saadaan tasaeräksi $p= \frac{800\hspace{1mm}\cdot \hspace{1mm}0.005}{1-1.005^{-18}} = 46.59 $     
 # 
@@ -164,7 +164,8 @@
 # 
 # Käytetään **laskukaavaa**   
 # 
-# $p=\frac{k\hspace{1mm}i-K\hspace{1mm}i (1+i)^{-n}}{1-(1+i)^{-n}}$, missä k = lainattu summa, i = lyhennyskauden korko, n = lyhennysten lukumäärä (laina-aika) ja K on viimeiseen erään lisätty ns. jäännösarvo     
+# $p=\frac{k\hspace{1mm}i-K\hspace{1mm}i (1+i)^{-n}}{1-(1+i)^{-n}}$, missä k = lainattu summa, i = lyhennyskauden korko,       
+# n = lyhennysten lukumäärä (laina-aika) ja K on viimeiseen erään lisätty ns. jäännösarvo     
 # 
 # Sijoitusten jälkeen saadaan tasaeräksi 
 # $p=\frac{6000\hspace{1mm}0.05-2000\hspace{1mm}0.005\cdot 1.005^{-36}}{1-1.005^{-36}} = 131.69 $      
@@ -263,5 +264,5 @@
 # 
 # Vuotuisten pääomamenojen annuiteetti $p=\frac{k\hspace{1mm}i}{1-(1+i)^{-n}} = \frac{90000\hspace{1mm}0.045}{1-1.045^{-5}} = n. 20500 $    
 # 
-# Vastaus: Tuottojen on oltava vähintään 20500, jotta investointi kattaisi pääomamenot.
+# Vastaus: Vuosituottojen on oltava vähintään 20500, jotta investointi kattaisi pääomamenot. (Ollakseen kannattava, investoinnin tulisi tuottaa lisäksi voittoa, joten 20500 ei ole riittävä tuotto).
 # ```

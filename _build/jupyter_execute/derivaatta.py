@@ -33,10 +33,10 @@
 # ```
 
 # > Em. raja-arvo voidaan laskea paitsi laskimella, myös sieventämällä osoittajaa:     
-# 
+# >
 # >    $(2+h)^2 - 4 = (2+h)(2+h)- 4 = 4 + 2h + 2h + h^2 - 4 = h^2 + 4h$  =>  
-#    
-# >  $\frac{(2+h)^2-4}{h}= \frac{h^2+4h}{h}=h+4$ , joka lähestyy arvoa 4, kun h-> 0
+# >   
+# >  $\frac{(2+h)^2-4}{h}= \frac{h^2+4h}{h}= \frac{h(h+4)}{h}=h+4$  , joka lähestyy arvoa 4, kun h-> 0
 
 # ## Käyrän derivaatan numeerinen määrittäminen (x,y) - datasta 
 
@@ -81,12 +81,12 @@
 # 
 #    $(x+h)^2 - x^2 = (x+h)(x+h)- x^2 = x^2 + 2xh + 2xh + h^2 - x^2 = h^2 + 2xh$  =>  
 #    
-#  $\frac{(x+h)^2-x^2}{h}= \frac{h^2+2xh}{h}=h+2 x$ , joka lähestyy arvoa 2x, kun h-> 0
+#  $\frac{(x+h)^2-x^2}{h}= \frac{h^2+2xh}{h}=\frac{h(h+2x)}{h}= h+2 x$ , joka lähestyy arvoa 2x, kun h-> 0
 
 # ## Derivaatan algebrallinen määritelmä
 
 # Merkitsemällä tarkastelupistettä, jossa derivaatta lasketaan $(x_0,f(x_0))$ ja viereistä pistettä
-# $(x_0+h,f(x_0+h))$ = $(x,f(x)$, voidaan derivaatta laskea siis raja-arvona $f'(x_0)=\underset{h\to 0}{lim}\frac{f(x_0+h)-f(x_0)}{h}$ tai yhtäpitävästi raja-arvona
+# $(x_0+h,f(x_0+h))$ = $(x,f(x)$, voidaan derivaatta laskea raja-arvona $f'(x_0)=\underset{h\to 0}{lim}\frac{f(x_0+h)-f(x_0)}{h}$ tai yhtäpitävästi raja-arvona
 # $f'(x_0)=\underset{x\to x_0}{lim}\frac{f(x)-f(x_0)}{x-x_0}$      
 # 
 # Sekantin kulmakertoimen lauseketta $\frac{f(x)-f(x_0)}{x-x_0}$ kutsutaan **erotusosamääräksi**

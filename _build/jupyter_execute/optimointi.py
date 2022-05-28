@@ -5,7 +5,7 @@
 
 # Ääriarvotehtävissä tavoite on löytää **funktion suurin tai pienin arvo**.     
 # 
-# Sovellusalueena on **optimointiprobleemat**, joissa halitaan esim. maksimoida tuottoa tai minimoida materiaalin käyttöä ja muita kuluja.  
+# Käytännön sovelluksina ovat erilaiset **optimointiprobleemat**, joissa halutaan esim. maksimoida tuottoa tai minimoida materiaalin käyttöä ym. kuluja.  
 # 
 # Funktiossa, jonka suurinta tai pienintä arvoa etsitään, voi olla **yksi tai useampi muuttuja**
 # 

@@ -26,11 +26,11 @@
 # ```
 
 # Kaavojen perusteluja:
-# 1. Vakiofunktion f(x) = c kuvaaja on vaakasuora, jonka tangentin kulmakerroin (derivaatta) = 0    
+# 1. Vakiofunktion f(x) = c kuvaaja on vaakasuora viiva, jonka kulmakerroin = 0    
 # 
 # 
 # 2. Jaollisuusopin kaavan mukaan derivaatan määritelmän mukainen erotusosamäärä sievenee muotoon       
-# $f'(x_0)=\underset{x\to x_0}{lim}\frac{x^n-x_0^n}{x-x_0}= \underset{x\to x_0}{lim}(x^{n-1}+x^{n-2}x_0+x^{n-3}x_0^2+...+x_0^{n-1})$ , joka lähestyy lauseketta $nx_0^{n-1}$, kun $x\to x_0$      
+# $f'(x_0)=\underset{x\to x_0}{lim}\frac{x^n-x_0^n}{x-x_0}= \underset{x\to x_0}{lim}(x^{n-1}+x^{n-2}x_0+x^{n-3}x_0^2+...+x_0^{n-1})= x_0^{n-1}+x_0^{n-1}x_0+... + x_0^{n-1} = nx_0^{n-1}$      
 # 
 # 
 # 3. Suoran f(x) = x  kulmakerroin eli derivaatta on 1. Kaavan voi myös johtaa sijoittamalla n=1 kaavaan (2), jolloin saadaan $Dx^1 = 1\cdot x^0 = 1$     
@@ -76,9 +76,9 @@
 # ```{admonition} **Derivointioperaation lineaarisuussäännöt**
 # :class: tip    
 # 
-# i)   $D(a f(x)) = a Df(x)$ 
+# 1)   $D(a f(x)) = a Df(x)$ 
 # 
-# ii)  $D(f(x)+g(x)) = Df(x) + Dg(x)$     
+# 2)  $D(f(x)+g(x)) = Df(x) + Dg(x)$     
 # 
 # ```
 
@@ -140,9 +140,10 @@
 
 # ```{admonition} Derivoi $x^2\cdot sin(x)$
 # :class: dropdown
-# Kaavan merkinnöillä $f(x)=x^2$ ja $g(x)=sin(x)$ ja niiden derivaatat $f'(x) = 2x$ ja $g'(x) = cos(x)$    
+# Kaavan merkinnöillä $f(x)=x^2$ ja $g(x)=sin(x)$     
+# ja niiden derivaatat $f'(x) = 2x$ ja $g'(x) = cos(x)$    
 # 
-# Kun nämä sijoitetaan kaavaan $D\hspace{2mm}(f(x)\cdot g(x)) = f'(x)\cdot g(x) + f(x)\cdot g'(x)$, saadaan    
+# Sijoitus kaavaan $D\hspace{2mm}(f(x)\cdot g(x)) = f'(x)\cdot g(x) + f(x)\cdot g'(x)$ antaa    
 # 
 # 
 # D $(x^2sin(x)) = 2x\cdot sin(x)+ x^2\cdot cos(x)$     
@@ -213,19 +214,22 @@
 
 # ```{admonition} Derivoi a) $cos(4x+1)$  b) $e^{-2x^2}$  c) $(3x+1)^4$
 # :class: dropdown
-# a) Ulkofunktio g(x)= cos(x) ja sisäfunktio f(x) = 4x+1. Derivaatat g'(x)=-sin(x) ja f'(x) = 4 =>     
+# a) Ulkofunktio g(x)= cos(x) ja sisäfunktio f(x) = 4x+1.     
+# Derivaatat g'(x)=-sin(x) ja f'(x) = 4 =>     
 # D $cos(4x+1) = g'(f(x))\cdot f'(x) = -sin(4x+1)\cdot 4 = -4 sin(4x+1)$       
 # 
-# b) Ulkofunktio $g(x)= e^x$ ja sisäfunktio $f(x) = -2x^2$. Derivaatat $g'(x)=e^x$ ja $f'(x) = -4x$ =>     
+# b) Ulkofunktio $g(x)= e^x$ ja sisäfunktio $f(x) = -2x^2$.      
+# Derivaatat $g'(x)=e^x$ ja $f'(x) = -4x$ =>     
 # D $e^{-2x^2} = g'(f(x))\cdot f'(x) = e^{-2x^2}\cdot (-4x) = -4x e^{-2x^2}$        
 # 
-# c) Ulkofunktio $g(x)= x^4$ ja sisäfunktio f(x) = 3x+1. Derivaatat $g'(x)=4 x^3$ ja f'(x) = 3 =>     
+# c) Ulkofunktio $g(x)= x^4$ ja sisäfunktio f(x) = 3x+1.       
+# Derivaatat $g'(x)=4 x^3$ ja f'(x) = 3 =>     
 # D $(3x+1)^4 = g'(f(x))\cdot f'(x) = 4(3x+1)^3\cdot 3 = 12 (3x+1)^3$ 
 # 
 # 
 # ```
 
-# Yhdistetyn funktion derivoimiskaavan käyttöä helpottaa, kun kaava puretaan useaksi kaavaksi tavallisimmille ulkofunktoille.
+# Yhdistetyn funktion derivoimiskaavan käyttöä helpottaa, kun kaava puretaan useaksi kaavaksi tavallisille ulkofunktoille.
 
 # ```{admonition} **Yhdistetyn funktion derivointikaavoja eri ulkofunktioille**
 # :class: tip    
