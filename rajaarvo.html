@@ -58,7 +58,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Derivaatta" href="derivaatta.html" />
-    <link rel="prev" title="Elinkaarilaskennan menetelmiä" href="elinkaarimenetelmat.html" />
+    <link rel="prev" title="Regressioanalyysi" href="tilasto2b.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,7 +104,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Elinkaarilaskenta
+  Elinkaarilaskentaa
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -121,6 +121,33 @@
  <li class="toctree-l1">
   <a class="reference internal" href="elinkaarimenetelmat.html">
    Elinkaarilaskennan menetelmiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tilasto-oppia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1a.html">
+   Tilastolliset tunnusluvut
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1b.html">
+   Todennäköisyysjakaumat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2a.html">
+   Tilastollinen virheenarviointi
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2b.html">
+   Regressioanalyysi
   </a>
  </li>
 </ul>
@@ -376,19 +403,19 @@
 <p>Tällä kurssilla riittää raja-arvon käsitteen intuitiivinen ymmärtäminen. Lisäksi opetellaan murtolausekkeiden raja-arvojen laskeminen yksinkertaisissa tapauksissa sellaisissa kohdissa, joissa lausekeen arvoa ei ole määritelty.</p>
 <div class="tip admonition">
 <p class="admonition-title"><strong>Raja-arvon intuitiivinen määritelmä</strong></p>
-<p>Vaikka funktio f(x) ei olisi määritelty kohdassa <span class="math notranslate nohighlight">\(x = x_0\)</span>, on mahdollista, että funktion arvot lähenevät rajatta tiettyä äärellistä arvoa <strong>a</strong>, kun muuttujan x:n arvot lähestyvät arvoa <span class="math notranslate nohighlight">\(x_0\)</span>. Tällöin lukua a kutsutaan funktion f <strong>raja-arvoksi</strong>, kun x lähestyy arvoa <span class="math notranslate nohighlight">\(x_0\)</span>.   Tällöin käytetään seuraavaa merkintää:</p>
+<p>Vaikka funktio f(x) ei olisi määritelty kohdassa <span class="math notranslate nohighlight">\(x = x_0\)</span>, on mahdollista, että funktion arvot lähenevät rajatta tiettyä äärellistä arvoa <strong>a</strong>, kun muuttujan x:n arvot lähestyvät arvoa <span class="math notranslate nohighlight">\(x_0\)</span>. Tällöin lukua a kutsutaan funktion f <strong>raja-arvoksi</strong>, kun x lähestyy arvoa <span class="math notranslate nohighlight">\(x_0\)</span>.   Tätä merkitään seuraavasti:</p>
 <p><span class="math notranslate nohighlight">\(\underset{x\to x_0}{lim}f(x)=a\)</span></p>
 </div>
-<p>Esim. funktiota <span class="math notranslate nohighlight">\(y = \frac {x^2 -1}{x-1}\)</span> ei ole määritelty kohdassa x = 1. Kuvaajan perusteella funktion arvot lähestyvät molemmilta puolilta raja-arvoa 2 lähestyttäessä kohtaa x = 1.</p>
+<p>Esim. funktiota <span class="math notranslate nohighlight">\(y = \frac {x^2 -1}{x-1}\)</span> ei ole määritelty kohdassa x = 1, mutta kuvaajan perusteella funktion arvot lähestyvät molemmilta puolilta raja-arvoa 2 lähestyttäessä kohtaa x = 1.</p>
 <p><img alt="der0" src="_images/kuva0.PNG" /></p>
 <section id="murtofunktion-raja-arvo-nimittajan-nollakohdassa">
 <h2>Murtofunktion raja-arvo nimittäjän nollakohdassa<a class="headerlink" href="#murtofunktion-raja-arvo-nimittajan-nollakohdassa" title="Permalink to this headline">¶</a></h2>
 <p>Murtofunktio ei ole määritelty nimittäjän nollakohdissa.</p>
 <p>Sillä voi silti olla äärellinen raja-arvo siinä edellyttäen, että ko. nimittäjän nollakohta on myös osoittajan nollakohta.</p>
-<p>Raja-arvo saadaan usein lasketuksi helposti sen jälkeen, kun nimittäjän ja osoittajan yhteinen tekijä on supistettu pois.</p>
+<p>Raja-arvo voidaan usein laskea helposti sen jälkeen, kun nimittäjän ja osoittajan yhteinen tekijä on supistettu pois.</p>
 <div class="dropdown admonition">
 <p class="admonition-title">Laske lausekkeen <span class="math notranslate nohighlight">\( \frac{3x^2+2x}{2x} \)</span> raja-arvo kohdassa x = 0</p>
-<p>Esitetään osoittaja tulomuodossa, ja supistetaan<br />
+<p>Esitetään osoittaja tulomuodossa, ja supistetaan yhteinen tekijä pois<br />
 <span class="math notranslate nohighlight">\( \frac{3x^2+2x}{2x}=\frac{x(3x+2)}{2x}=\frac{(3x+2)}{2} \)</span><br />
 Supistamisen jälkeen sijoitus x = 0 antaa raja-arvoksi <span class="math notranslate nohighlight">\(\frac{(3\cdot 0+2)}{2}=1\)</span></p>
 </div>
@@ -401,7 +428,7 @@ Sijoitus x = 2 antaa raja-arvoksi 2+2 = 4</p>
 </section>
 <section id="raja-arvomerkinta">
 <h2>Raja-arvomerkintä<a class="headerlink" href="#raja-arvomerkinta" title="Permalink to this headline">¶</a></h2>
-<p>Edelliset laskut voi kirjoittaa seuraavalla tavalla käyttämällä raja-arvomerkintää</p>
+<p>Edelliset laskut voi kirjoittaa seuraavasti käyttämällä raja-arvomerkintää</p>
 <p><span class="math notranslate nohighlight">\(\underset{x\to 0}{lim}\frac{3x^{2}+2x}{2x}=\underset{x\to 0}{lim}\frac{x(3x+2)}{2x}=\underset{x\to 0}{lim}\hspace{2mm}\frac{3x+2}{2}=\frac{3\cdot 0+2}{2}=1\)</span></p>
 <p><span class="math notranslate nohighlight">\(\underset{x\to 2}{lim}\frac{x^{2}-4}{x-2}=\underset{x\to 2}{lim}\frac{(x-2)(x+2)}{x-2}=\underset{x\to 2}{lim}\hspace{2mm}(x+2)=2+2=4\)</span></p>
 </section>
@@ -467,11 +494,11 @@ Lauseke ei ole määritelty kohdassa x = 0, mutta taulukon perusteella lausekkee
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="elinkaarimenetelmat.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="tilasto2b.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Elinkaarilaskennan menetelmiä</p>
+            <p class="prev-next-title">Regressioanalyysi</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="derivaatta.html" title="next page">

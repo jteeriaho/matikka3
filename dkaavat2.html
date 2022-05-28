@@ -104,7 +104,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Elinkaarilaskenta
+  Elinkaarilaskentaa
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -121,6 +121,33 @@
  <li class="toctree-l1">
   <a class="reference internal" href="elinkaarimenetelmat.html">
    Elinkaarilaskennan menetelmiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tilasto-oppia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1a.html">
+   Tilastolliset tunnusluvut
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1b.html">
+   Todennäköisyysjakaumat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2a.html">
+   Tilastollinen virheenarviointi
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2b.html">
+   Regressioanalyysi
   </a>
  </li>
 </ul>
@@ -396,7 +423,8 @@
 <div class="tip admonition">
 <p class="admonition-title"><strong>Osittaisderivaattojen merkintätavat</strong></p>
 <p>Olkoon f(x,y) kahden muuttujan funktio, jolla on osittaisderivaatat molempien muuttujien suhteen.</p>
-<p>Osittaisderivaattaa muuttujien x ja y suhteen merkitään <span class="math notranslate nohighlight">\( \frac{\partial f}{\partial x}\)</span> ja <span class="math notranslate nohighlight">\( \frac{\partial f}{\partial y}\)</span>.  <span style="color: brown;">     <em>(luetaan: “doo ef doo x”)</em></span></p>
+<p>Osittaisderivaattaa muuttujien x ja y suhteen merkitään <span class="math notranslate nohighlight">\( \frac{\partial f}{\partial x}\)</span> ja <span class="math notranslate nohighlight">\( \frac{\partial f}{\partial y}\)</span>.<br />
+<span style="color: brown;">     <em>(luetaan: “doo ef doo x”)</em></span></p>
 <p>Myös <span class="math notranslate nohighlight">\(f_x\)</span> ja <span class="math notranslate nohighlight">\(D(f,x)\)</span>, sekä <span class="math notranslate nohighlight">\(f_y\)</span> ja <span class="math notranslate nohighlight">\(D(f,y)\)</span>  ovat mahdollisia merkintätapoja.</p>
 </div>
 <div class="dropdown admonition">
@@ -430,7 +458,7 @@
 <div class="tip admonition">
 <p class="admonition-title">Gradientin määritelmä</p>
 <p>Funktion f(x,y) <strong>gradientti</strong> on sen osittaisderivaattojen muodostama vektori <span class="math notranslate nohighlight">\((\frac{\partial f}{\partial x},\frac{\partial f}{\partial y})\)</span>. Gradienttia merkitään usein <span class="math notranslate nohighlight">\(\nabla f\)</span>.</p>
-<p>Kahden muuttujan funktion z = f(x,y) kuvaaja 3D avaruudessa on pinta. Pisteessä (x,y) laskettu funktion f gradienttivektori kertoo, mihin suuntaan funktio kasvaa nopeimmin pinnan pisteessä (x,y, f(x,y)).</p>
+<p>Kahden muuttujan funktion z = f(x,y) kuvaaja 3D avaruudessa on pinta. Pisteessä (x,y) laskettu funktion f gradienttivektori kertoo, mihin suuntaan funktio kasvaa nopeimmin pinnan pisteessä (x,y,z), missä z=f(x,y)).</p>
 <p>Esim. Funktion <span class="math notranslate nohighlight">\(z = f(x,y) =  4 - x^2- y^2\)</span> kuvaaja on alaspäin aukeava paraboloidi.<br />
 Sen gradienttivektorin yleinen lauseke on <span class="math notranslate nohighlight">\((\frac{\partial f}{\partial x},\frac{\partial f}{\partial y})\)</span> = <span class="math notranslate nohighlight">\((-2x,-2y)\)</span>.</p>
 <p>Kysyttäessä missä suunnassa pisteestä (1,0.5) on paraboloidin huippu, voidaan vastauksena antaa gradienttivektori <span class="math notranslate nohighlight">\((-2\cdot 1,-2\cdot 0.5) = (-2,-1)\)</span>.</p>
@@ -466,7 +494,7 @@ j.n.e</p>
 <p><img alt="deriv" src="_images/kuva5.PNG" /></p>
 <div class="dropdown admonition">
 <p class="admonition-title">Millä x:n arvolla lauseke <span class="math notranslate nohighlight">\(2.5 + 6.0x -1.5x^2\)</span> saa suurimman arvonsa.</p>
-<p>Funktion kuvaaja on alaspäin aukeava paraabeli.  Maksimi löytyy kohdasta, jossa derivaatta = 0</p>
+<p>Funktion kuvaaja on alaspäin aukeava paraabeli, jonka maksimikohdassa derivaatta = 0</p>
 <p>Lasketaan derivaatan nollakohta: D<span class="math notranslate nohighlight">\((2.5 + 6.0 x - 1.5 x^2) = 6.0 - 3.0 x = 0\)</span><br />
 =&gt; <span class="math notranslate nohighlight">\(x = 6.0/3.0 = 2.0\)</span></p>
 <p>Suurin arvo löytyy kohdasta x = 2 ja se on <span class="math notranslate nohighlight">\(2.5 + 6\cdot 2 - 1.5\cdot 2^2\)</span> = 8.5</p>
@@ -487,7 +515,8 @@ Kun derivaatan nollakohta on löydetty, eikä funktion kuvaajaa ole käytettävi
 <p>Funktion derivaatan <span class="math notranslate nohighlight">\(f'(x) = e^x - 1\)</span> nollakohta saadaan yhtälöstä <span class="math notranslate nohighlight">\(e^x = 1\)</span>, josta ratkaistuna x = ln(1)=0.</p>
 <p>Lasketaan funktion 2. derivaatta  <span class="math notranslate nohighlight">\(f''(x) = e^x\)</span> ääriarvon laadun määrittämiseksi.<br />
 Sen arvo derivaatan nollakohdassa on <span class="math notranslate nohighlight">\(f''(0) = e^0 = 1\)</span>,  joka on positiivinen.<br />
-Funktiolla f(x) on siten minimi kohdassa x=0. Minimiarvo on <span class="math notranslate nohighlight">\(f(0) = e^0 - 0 + 1 = 1+1 = 2\)</span></p>
+Funktiolla f(x) on siten minimi kohdassa x=0.<br />
+Minimiarvo on <span class="math notranslate nohighlight">\(f(0) = e^0 - 0 + 1 = 1+1 = 2\)</span></p>
 </div>
 <p>Huom! Nykyisin ääriarvon laadun määrittämiseen riittää useini funktion kuvaajan piirtäminen grafiikkalaskimella.   Ääriarvotehtäviä käsitellään myöhemmin laajemmin.</p>
 </section>

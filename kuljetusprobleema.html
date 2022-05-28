@@ -104,7 +104,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Elinkaarilaskenta
+  Elinkaarilaskentaa
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -121,6 +121,33 @@
  <li class="toctree-l1">
   <a class="reference internal" href="elinkaarimenetelmat.html">
    Elinkaarilaskennan menetelmiä
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tilasto-oppia
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1a.html">
+   Tilastolliset tunnusluvut
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto1b.html">
+   Todennäköisyysjakaumat
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2a.html">
+   Tilastollinen virheenarviointi
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="tilasto2b.html">
+   Regressioanalyysi
   </a>
  </li>
 </ul>
@@ -390,14 +417,14 @@
 <p>Lineaarisen ausekkeen a x + b y , missä vakiot , suurimman tai pienimmän arvon määrittämistä tasoalueessa nimitetään lineaariseksi optimoinniksi. Lauseke voi esittää esim. kahden eri tuotteen myyntivoittoa.
 Näiden tuotteiden valmistusta rajoittavat ehdot, jotka aiheituvat rajallisista työaika-, valmistusmateriaali- ja tuotantokustannusresursseista, voidaan usein havainnollistaa tasoalueena.</p>
 <div class="tip admonition">
-<p class="admonition-title">Esim. Epäyhtälöt <span class="math notranslate nohighlight">\(x + 3 y ≤ 18,  3 x + 2 y ≤ 19, x ≥  0\text{ ja }y ≥  0\)</span> määrittävät nelikulmion N  x,y – tasossa. Määritä lausekkeen <span class="math notranslate nohighlight">\(f =  5x +4 y\)</span> suurin arvo nelikulmiossa N   </p>
+<p class="admonition-title">Esim. Epäyhtälöt <span class="math notranslate nohighlight">\(x + 3 y ≤ 18,  3 x + 2 y ≤ 19, x ≥  0\text{ ja }y ≥  0\)</span> määrittävät nelikulmion   x,y – tasossa. Määritä lausekkeen <span class="math notranslate nohighlight">\(f =  5x +4 y\)</span> suurin arvo nelikulmiossa    </p>
 <p>WolframAlphalla kuva rajoitteiden määräämästä nelikulmiosta syntyy kätevästi komennolla:<br />
 <span class="math notranslate nohighlight">\(\color{red}{\text{plot }\{x + 3 y ≤ 18,  3 x + 2 y ≤ 19, x ≥  0, y ≥  0\}}\)</span>
 <img alt="linop" src="_images/kuva19.PNG" /></p>
 <p>Maksimoitavan funktion f = 5 x + 4 y osittaisderivaattojen muodostamaa vektoria <span class="math notranslate nohighlight">\((\frac{\partial f}{\partial x},\frac{\partial f}{\partial y}) = (5,4) \)</span> kutsutaan funktion  <strong>gradientiksi</strong>.</p>
 <p>Lineaarisen funktion f kuvaaja on tasopinta 3D - avaruudessa. Gradientti kertoo, mihin suuntaan x,y - tasossa funktio f = 5x+4y kasvaa jyrkimmin.</p>
-<p>Kuvaan on piirretty gradientin suuntaisia vektoreita. Kuvan perusteella on ilmeistä, että funktio f saavuttaa suurimman arvonsa pisteessä P, joka on gradientin suunnassa kauimmainen nelikulmion N piste.</p>
-<p>Piste P on kahden nelikulmion N rajaviivan x + 3 y = 18 ja 3 x + 2 y = 19 risteyskohdassa. Ratkaisemalla yhtälöpari esim. laskinkomennolla <span class="math notranslate nohighlight">\(\color{red}{\text{solve }x + 3 y = 18,  3 x + 2 y = 19}\)</span>, saadaan P:n koordinaateiksi x = 3 ja  y = 5.</p>
+<p>Kuvaan on piirretty gradientin suuntaisia vektoreita. Kuvan perusteella on ilmeistä, että funktio f saavuttaa suurimman arvonsa pisteessä P, joka on gradientin suunnassa kauimmainen nelikulmion piste.</p>
+<p>Piste P on kahden nelikulmion  rajaviivan x + 3 y = 18 ja 3 x + 2 y = 19 risteyskohdassa. Ratkaisemalla yhtälöpari esim. laskinkomennolla <span class="math notranslate nohighlight">\(\color{red}{\text{solve }x + 3 y = 18,  3 x + 2 y = 19}\)</span>, saadaan P:n koordinaateiksi x = 3 ja  y = 5.</p>
 <p>Funktion f  suurin arvo on siten <span class="math notranslate nohighlight">\(f(3,5) = 5\cdot 3 + 4\cdot 5 = 35\)</span></p>
 </div>
 </section>

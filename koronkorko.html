@@ -142,7 +142,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="tilasto2a.html">
-   Tilastollista virheenarviointia
+   Tilastollinen virheenarviointi
   </a>
  </li>
  <li class="toctree-l1">
@@ -487,8 +487,8 @@
 <p>i = korkokanta (laskuissa desimaalimuodossa: esim. 5% = 0.05)</p>
 <p>t = aika, korkojaksojen lukumäärä</p>
 </div></blockquote>
-<p>Edellä mainittujen lisäksi kaavoissa esiintyy usein symboli r (lisäyskerroin, korkotekijä), jonka laskukaava on</p>
-<p>r = 1 + i</p>
+<p>Em. lisäksi kaavoissa käytetään usein symbolia r, jonka laskukaava on r = 1 + i.<br />
+Sitä nimitetään <em>lisäyskertoimeksi</em> tai <em>korkotekijäksi</em>.</p>
 </section>
 <section id="tulevan-arvon-laskeminen-koronkorkomenetelmalla">
 <h3>Tulevan arvon laskeminen koronkorkomenetelmällä<a class="headerlink" href="#tulevan-arvon-laskeminen-koronkorkomenetelmalla" title="Permalink to this headline">¶</a></h3>
@@ -511,7 +511,7 @@ Seuraavan korkojakson aikana korkoa kertyy alkuperäisen pääoman ja siihen lii
 <h3>Nykyarvon laskeminen (diskonttaus)<a class="headerlink" href="#nykyarvon-laskeminen-diskonttaus" title="Permalink to this headline">¶</a></h3>
 <p>Kun halutaan tietää esim. jonkin tulevan tuoton arvo nykyhetkellä, tarvitaan <strong>nykyarvon laskemista eli diskonttausta</strong></p>
 <div class="tip admonition">
-<p class="admonition-title"><strong>Tulevan arvon laskukaava</strong></p>
+<p class="admonition-title"><strong>Nykyarvon laskukaava</strong></p>
 <p>Nykyarvo <span class="math notranslate nohighlight">\(k = \frac{K}{(1+i)^t}\hspace{1cm}\)</span> joka voidaan esittää myös muodossa</p>
 <p><span class="math notranslate nohighlight">\(k = K {(1+i)}^{-t} \)</span></p>
 <p>K = tuleva arvo, i = korkokanta, t = aika (korkojaksojen lukumäärä)</p>
@@ -530,7 +530,7 @@ Seuraavan korkojakson aikana korkoa kertyy alkuperäisen pääoman ja siihen lii
 <p>K = tuleva arvo, k=nykyarvo, t = aika (korkojaksojen lukumäärä)</p>
 </div>
 <p><em>Kaavan perustelu:</em><br />
-<span class="math notranslate nohighlight">\(K = k {(1+i)}^{t} \to \frac{K}{k} = (1+i)^t \to 1+i=\sqrt[t]{\frac{K}{k}}\to \text{tulos} \)</span></p>
+<span class="math notranslate nohighlight">\(K = k {(1+i)}^{t} \Rightarrow \frac{K}{k} = (1+i)^t \Rightarrow 1+i=\sqrt[t]{\frac{K}{k}}\Rightarrow i = \sqrt[t]{\frac{K}{k}}-1 \)</span></p>
 <div class="dropdown admonition">
 <p class="admonition-title">Paavo sijoittaa 20000 € kohteeseen, josta arvioi saavansa 24000 € myydessään sen 5 v kuluttua. Paavo tavoittelee 4.0% prosentin voittoa investoinnille. Toteutuuko tavoite? Laske Paavon saama todellinen korko?</p>
 <p>Lasketaan Paavon saama todellinen korko. <span class="math notranslate nohighlight">\(i = \sqrt[t]{\frac{K}{k}}-1 =\sqrt[t]{\frac{24000}{25000}}-1 = 0.037=3.7\%\)</span></p>
@@ -546,7 +546,7 @@ Seuraavan korkojakson aikana korkoa kertyy alkuperäisen pääoman ja siihen lii
 <p>K = tuleva arvo, k=nykyarvo, t = aika (korkojaksojen lukumäärä)</p>
 </div>
 <p><em>Kaavan perustelu:</em><br />
-<span class="math notranslate nohighlight">\(K = k {(1+i)}^{t} \to \frac{K}{k} = (1+i)^t \to log(\frac{K}{k})= log((1+i)^t)= t\hspace{1mm} log(1+i)\to t = \frac {ln(\frac{K}{k})}{ln(1+i)} \)</span></p>
+<span class="math notranslate nohighlight">\(K = k {(1+i)}^{t} \Rightarrow \frac{K}{k} = (1+i)^t \Rightarrow log(\frac{K}{k})= log((1+i)^t)= t\hspace{1mm} log(1+i)\Rightarrow t = \frac {ln(\frac{K}{k})}{ln(1+i)} \)</span></p>
 <div class="dropdown admonition">
 <p class="admonition-title">Annen auton arvo on nyt 5000 €. Monenko vuoden kuluttua arvo on enää 1000 € olettaen, että ko. automallin arvo putoaa 15% vuodessa?</p>
 <p>Korko on tässä tapauksessa negatiivinen luku -0.015, joten korkotekijä 1 + i = 0.85</p>
@@ -570,7 +570,8 @@ Seuraavan korkojakson aikana korkoa kertyy alkuperäisen pääoman ja siihen lii
 <p>Periaate:  Maksuerien nykyarvojen summan on oltava yhtäsuuri kuin ostohinta.</p>
 <p>Kuukausierä p on yhtälön <span class="math notranslate nohighlight">\(800 = \frac {p}{1.005}+ \frac {p}{1.005^2} + ... + \frac {p}{1.005^18}\)</span> ratkaisu.</p>
 <p>Yhtälö on liian pitkä laskimella ratkaistavaksi. Käytetään <strong>tasaerän laskukaavaa</strong></p>
-<p><span class="math notranslate nohighlight">\(p=\frac{k\hspace{1mm}i}{1-(1+i)^{-n}}\)</span>, missä k = lainattu summa, i = lyhennyskauden korko, n = lyhennysten lukumäärä (laina-aika)</p>
+<p><span class="math notranslate nohighlight">\(p=\frac{k\hspace{1mm}i}{1-(1+i)^{-n}}\)</span>, missä k = lainattu summa, i = lyhennyskauden korko,<br />
+n = lyhennysten lukumäärä</p>
 <p>Sijoitusten jälkeen saadaan tasaeräksi <span class="math notranslate nohighlight">\(p= \frac{800\hspace{1mm}\cdot \hspace{1mm}0.005}{1-1.005^{-18}} = 46.59 \)</span></p>
 <p>Excel-ratkaisu: <span class="math notranslate nohighlight">\(\color{blue}{\text{=MAKSU(0,5%;18;800)}}\)</span></p>
 </div>
@@ -584,7 +585,8 @@ Seuraavan korkojakson aikana korkoa kertyy alkuperäisen pääoman ja siihen lii
 <p class="admonition-title">Esim. Eero ostaa vaihtoauton osamaksulla, jonka maksuaika on 36 kk. Luottosumma on 6000 euroa, korko 6% vuodessa eli 0.5% kk:ssa. Mikä on kuukausierän suuruus, kun viimeiseen erään on lisätty jäännösarvo 2000 euroa?</p>
 <p>Periaate:  Maksuerien nykyarvojen summan on oltava yhtäsuuri kuin ostohinta.</p>
 <p>Käytetään <strong>laskukaavaa</strong></p>
-<p><span class="math notranslate nohighlight">\(p=\frac{k\hspace{1mm}i-K\hspace{1mm}i (1+i)^{-n}}{1-(1+i)^{-n}}\)</span>, missä k = lainattu summa, i = lyhennyskauden korko, n = lyhennysten lukumäärä (laina-aika) ja K on viimeiseen erään lisätty ns. jäännösarvo</p>
+<p><span class="math notranslate nohighlight">\(p=\frac{k\hspace{1mm}i-K\hspace{1mm}i (1+i)^{-n}}{1-(1+i)^{-n}}\)</span>, missä k = lainattu summa, i = lyhennyskauden korko,<br />
+n = lyhennysten lukumäärä (laina-aika) ja K on viimeiseen erään lisätty ns. jäännösarvo</p>
 <p>Sijoitusten jälkeen saadaan tasaeräksi
 <span class="math notranslate nohighlight">\(p=\frac{6000\hspace{1mm}0.05-2000\hspace{1mm}0.005\cdot 1.005^{-36}}{1-1.005^{-36}} = 131.69 \)</span></p>
 <p>Excel-ratkaisu: <span class="math notranslate nohighlight">\(\color{blue}{\text{=MAKSU(0,5%;36;5000,-2000)}}\)</span></p>
@@ -645,7 +647,7 @@ Lasketaan sisäinen korko Excel funktiolla IRR ao. ohjeen mukaisesti:</p>
 <div class="dropdown admonition">
 <p class="admonition-title">Yritys harkitsee investointia 90000 hintaiseen työkoneeseen, jonka käyttöikä on 5 vuotta. Laske investoinnin vuotuiset pääomakulut käyttäen 4.5% korkokantaa. (Ollakseen kannattava vuosituottojen on oltava vähintään pääomakulujen suuruiset.)</p>
 <p>Vuotuisten pääomamenojen annuiteetti <span class="math notranslate nohighlight">\(p=\frac{k\hspace{1mm}i}{1-(1+i)^{-n}} = \frac{90000\hspace{1mm}0.045}{1-1.045^{-5}} = n. 20500 \)</span></p>
-<p>Vastaus: Tuottojen on oltava vähintään 20500, jotta investointi kattaisi pääomamenot.</p>
+<p>Vastaus: Vuosituottojen on oltava vähintään 20500, jotta investointi kattaisi pääomamenot. (Ollakseen kannattava, investoinnin tulisi tuottaa lisäksi voittoa, joten 20500 ei ole riittävä tuotto).</p>
 </div>
 </section>
 </section>
