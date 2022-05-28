@@ -223,7 +223,8 @@
 # $Excel: \hspace{5mm}\color{red}{=NORMAALIJAKAUMA.KÄÄNTEINEN(0,90;180,7;7,4)}$
 # 
 # c) $P(190\le x \le 200) = \varphi(200)-\varphi(190) = 0.996 – 0.899 = 0.097 = 9.7\%$
-# $Excel: \hspace{5mm}\color{red}{=NORMAALIJAKAUMA(200;180,7;7,4,1)-NORMAALIJAKAUMA(190;180,7;7,4,1)}$
+# $Excel: \hspace{5mm}\color{red}{=NORMAALIJAKAUMA(200;180,7;7,4,1)}$      
+# $\hspace{18mm}\color{red}{-NORMAALIJAKAUMA(190;180,7;7,4,1)}$
 # 
 # ```  
 # ````
