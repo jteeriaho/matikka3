@@ -27,14 +27,15 @@
 
 # Kaavojen perusteluja:
 # 1. Vakiofunktion f(x) = c kuvaaja on vaakasuora viiva, jonka kulmakerroin = 0    
-# 
+#        
 # 
 # 2. Jaollisuusopin kaavan mukaan derivaatan määritelmän mukainen erotusosamäärä sievenee muotoon       
-# $f'(x_0)=\underset{x\to x_0}{lim}\frac{x^n-x_0^n}{x-x_0}= \underset{x\to x_0}{lim}(x^{n-1}+x^{n-2}x_0+x^{n-3}x_0^2+...+x_0^{n-1})= x_0^{n-1}+x_0^{n-1}x_0+... + x_0^{n-1} = nx_0^{n-1}$      
-# 
+# $f'(x_0)=\underset{x\to x_0}{lim}\frac{x^n-x_0^n}{x-x_0}= \underset{x\to x_0}{lim}(x^{n-1}+x^{n-2}x_0+x^{n-3}x_0^2+...+x_0^{n-1})$      
+# $\hspace{36mm}= x_0^{n-1}+x_0^{n-1}x_0+... + x_0^{n-1} = nx_0^{n-1}$      
+#          
 # 
 # 3. Suoran f(x) = x  kulmakerroin eli derivaatta on 1. Kaavan voi myös johtaa sijoittamalla n=1 kaavaan (2), jolloin saadaan $Dx^1 = 1\cdot x^0 = 1$     
-# 
+#         
 # 
 # 4. Kaavaa (2) voidaan soveltaa myös, kun potenssi n on negatiivinen.  Tällöin $D\frac {1}{x^n} = Dx^{-n}=-n x^{-n-1} = -\frac {n}{x^{n+1}}$
 
