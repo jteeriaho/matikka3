@@ -67,8 +67,8 @@
 # > Suurilla otoskoon arvoilla ( n > 50) 95% luottamustasoa vastaa t = 1.96, ja       
 # > 99% luottamustasoa vastaa t = 2.58    (perustuvat normaalijakauman kertymäfunktioon)   
 # > 
-# > **Merkitsevyystaso.** Luottamustason sijasta esim. laskimissa käytettään sen komplementtia, jota sanotaan *merkitsevyystasoksi*.     
-# > Esim.  95% luottamustaso vastaa 5% merkitsevyystasoa.
+# > **Merkitsevyystaso.** Luottamustason sijasta esim. Excel-funktioissa käyttää sen komplementtia, jota sanotaan *merkitsevyystasoksi*.     
+# > Ts.  95% luottamustaso vastaa 5% merkitsevyystasoa, 99% luottamustasoa vastaa 1% merkitsevyystaso
 # 
 # ```
 
@@ -79,7 +79,7 @@
 # t = kattavuuskerroin, s = populaatiokeskihajonta (tai otoskeskihajonta, jos em. ei tiedossa), n = otoskoko    
 # 
 # Kattavuuskerroin t riippuu otoskoosta ja luottamustasosta (yleensä joko 95% tai 99%).      
-# Ilman laskinta tai Exceliä kattavuuskertoimet eri otoskoille löytyvät taulukkokirjoista tai netistä. Alla eräs taulukko.  
+# Ilman laskinta tai Exceliä kattavuuskertoimet eri otoskoille löytyvät taulukkokirjoista tai netistä. Alla taulukko kattavuuskertoimista eri suuruisille otoksille.  
 # 
 # ```
 
@@ -87,7 +87,7 @@
 # 
 # ![ttaulu](images/kuva58.PNG)   
 # 
-# > Em. taulukon käytön sijasta virhemarginaali on nopeampi laskea Excel- funktiolla, joka evaluoi kaavan $\Delta X = t \frac{s}{\sqrt{n}}$   
+# > Taulukon sijasta virhemarginaali voidaan laskea Excel- funktiolla LUOTTAMUSVÄLI.T.
 
 # ###  Excel -funktio LUOTTAMUSVÄLI.T (engl. CONFIDENCE.T)
 
@@ -103,7 +103,7 @@
 # 2) Tiheyden absoluuttinen virhe 95% merkitsevyystasolla saadaan Excel funktiolla    
 # **= LUOTTAMUSVÄLI.T(5%;101;10)**, joka antaa virheeksi **72.2**      
 # 
-# (Ilman Exceliä tulos saataisiin kaavalla $\Delta X = t \frac{s}{\sqrt{n}} = 2.262\frac{101}{\sqrt{10}}= 72.2$.      
+# (Ilman Exceliä tulos saadaan kaavalla $\Delta X = t \frac{s}{\sqrt{n}} = 2.262\frac{101}{\sqrt{10}}= 72.2$.      
 # Kattavuuskerroin 2.262 löytyy yo. taulukosta riviltä n - 1 = 10 - 1 = 9) 
 # 
 # ```
@@ -112,14 +112,14 @@
 
 # Gallup - tutkimuksissa tutkittava muuttujana on jonkin ehdokkaan tai ajatuksen kannatusprosentti, ts. **suhteellinen osuus**.   Otoskoot Gallup tutkimuksissa ovat suuria, yleensä 500 - 2500. Satunnaistettujen otosten tulokset noudattavat ns. binomijakaumaa.    
 # 
-# Suhteellisen osuuden virhemarginaali riippuu otoskoosta n ja ehdokkaan/ajatuksen kannatuksesta p seuraavasti:  
+# Suhteellisen osuuden virhemarginaali riippuu otoskoosta n ja ehdokkaan kannatuksesta p seuraavasti:  
 
 # ```{admonition} **Suhteellisen osuuden virhemarginaali**
 # :class: tip
 # 
 # $\Delta p = t \sqrt\frac{p(1-p)}{n}$
 # 
-# n = otoskoko, p = kannatusprosentti desimaalilukuna, esim. 0.35 (vastaa 35% kannatusta)
+# n = otoskoko, p = kannatusprosentti desimaalilukuna (esim. 0.35 vastaa 35% kannatusta), 
 # kattavuuskerroin t = 1.96 (95% luottamustaso) tai t = 2.34 (99% luottamustasolla)
 # 
 # ```
